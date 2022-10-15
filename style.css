@@ -1,0 +1,544 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-align: center;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.row1 {
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+}
+
+.list {
+  max-width: 450px;
+  margin-inline: auto;
+}
+
+
+
+/*------------LoginModal--------------*/
+
+.login-photo {
+  display: block;
+  width: 19%;
+  height:  19%;
+  margin: 20px auto;
+}
+
+
+
+
+.modal {
+  max-width: 50ch;
+  padding: 40px;
+  margin-inline: auto;
+  margin-top: 17vh;
+  position: fixed;
+  z-index: 32343287756253689134567823581234567890123456789012345678901234567890;
+  border: 0;
+  box-shadow: 0 0 1em rgb(0 0 0 / .4);
+  text-align: center;
+}
+
+
+
+.modal::backdrop {
+  background: rgba(0 0 0 / 0.4);
+ 
+}
+
+
+.modal * {
+  margin-block: 13px;
+}
+
+
+
+
+.modal input {
+  border: 1.3px solid black;
+  border-radius: 3px;
+}
+
+form button {
+  background-color: hsl(12, 88%, 59%);
+  border: 1px solid hsl(12, 88%, 59%);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 20px;
+  margin-block: 20px;
+  filter: drop-shadow(1px 1px 6px hsl(12, 88%, 59%));
+}
+
+/*-----------------*/
+
+
+
+
+
+img {
+  width: 100%;
+}
+
+.intro-h1,
+.section4 h1 {
+  font-size: clamp(1.55rem, 2.4rem, 4rem);
+  line-height: 51px;
+}
+
+h2 {
+  font-size: clamp(1.7rem, 2.2rem, 3rem);
+}
+
+.text, .text2 {
+  max-width: 450px;
+  margin-inline: auto;
+}
+
+img {
+  max-width: 430px;
+}
+
+.text h1, h2, h3, h4  {
+  color:  hsl(228, 39%, 23%);
+}
+
+p {
+  color: rgb(85, 85, 85);
+  margin-block: 20px
+}
+
+input {
+  padding-block: 12.5px;
+  border-radius: 20px;
+  border: none;
+  margin-right: 7px;
+  padding-left: 10px;
+}
+
+.button1 {
+  background-color: hsl(12, 88%, 59%);
+  border: 1px solid hsl(12, 88%, 59%);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 20px;
+  margin-block: 20px;
+  filter: drop-shadow(1px 1px 6px hsl(12, 88%, 59%));
+}
+
+.button2 {
+  background-color: white;
+  border: 1px solid white;
+  color: hsl(12, 88%, 59%);
+  padding: 12px 25px;
+  border-radius: 20px;
+  margin-block: 20px;
+}
+
+.button3 {
+  background-color: hsl(12, 88%, 59%);
+  border: 1px solid hsl(12, 88%, 59%);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 20px;
+  margin-block: 20px;
+}
+
+.button1:hover,
+.button2:hover,
+.button3:hover {
+  opacity: .75;
+  cursor: pointer;
+}
+
+button.button1.hdbtn {
+  display: none;
+}
+
+.section3 img {
+  width: 15%;
+}
+
+header {
+  background-color: #fff;
+}
+
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: black;
+}
+
+
+
+.navbar-links {
+  width: 100%;
+  display: none;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar-links li {
+  list-style: none;
+  font-size: 15px;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: black;
+  padding: .85rem ;
+  display: block;
+}
+
+.navbar-links li:hover {
+  opacity: 0.6;
+}
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 31px;
+  height: 21px;
+}
+
+.bar {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.navbar-links.active {
+  display: flex;
+  background-color: white;
+  filter: drop-shadow(1px 1px  10px rgb(172, 172, 172));
+}
+
+
+
+
+
+.mySlides {
+  display: none
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+
+  display: block;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+/* Caption text */
+.text2 {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+ 
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 11px;
+  width: 11px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: hsl(12, 88%, 59%);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+
+.section2 {
+  margin-top: 140px;
+}
+
+
+.list + .list {
+  width: 100%;
+  margin: 50px auto;
+}
+
+.list h4 {
+  text-align: left;
+  margin-left: 25px;
+  margin-top: 5px;
+}
+
+
+.list-number {
+  background-color: orangered;
+  height: 30px;
+  padding-inline:20px;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+
+.section3-box img {
+  margin-block: 40px 15px;
+}
+
+
+.section4 {
+  background-color: hsl(12, 88%, 59%);
+  color: white;
+  padding: 50px 2px;
+  margin-top: 40px;
+}
+
+footer {
+  background-color: hsl(233, 12%, 13%);
+  color: white;
+  padding-block: 30px;
+}
+
+
+.logo {
+  max-width: 220px;
+  width: 50%;
+  margin-block: 35px;
+}
+
+footer .footer-items {
+  width: 100%;
+  max-width: 240px;
+}
+
+footer ul li {
+  margin-block: 8px;
+  list-style: none;
+}
+
+footer ul li:hover {
+  color: hsl(12, 88%, 59%);
+  cursor: pointer;
+}
+
+.socials {
+  max-width: 240px;
+  width: 40%;
+  margin-inline: auto;
+}
+
+footer .socials img:hover {
+color: hsl(12, 88%, 59%);
+}
+
+.row3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 270px;
+  margin: 0 auto;
+}
+
+
+
+/*----animation fadein*/
+.hidden {
+  opacity: 0;
+  filter: blur(2px);
+  transform: translateX(-5%);
+  transition: all 700ms;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
+
+
+
+
+@media(min-width: 900px) {
+
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .row2 {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+  }
+
+  .container {
+    width: 85%;
+  }
+
+  body {
+    text-align: left;
+  }
+
+  .toggle-button {
+    display: none;
+  }
+
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-links  {
+    display: flex;
+    width: 40%;
+  }
+
+  .navbar-links ul {
+    flex-direction: row;
+    justify-content: right;
+  }
+
+  button.button1.hdbtn {
+    display: block;
+  }
+
+
+  .middle {
+    margin-inline: auto;
+    display: block;
+    text-align: center;
+  }
+
+  .section1 img {
+    order: 2;
+  }
+
+  
+
+  .section2 .text {
+    max-width: 450px;
+    float: left;
+    margin: 0;
+  }
+
+
+  .section1 .text {
+    margin-inline: 0;
+  }
+
+  footer div:first-of-type {
+    order: 3;
+  }
+
+  footer div:nth-of-type(2) {
+    order: 2;
+    width:30%;
+  }
+  
+
+  footer .logo,
+  .socials{
+    width: 100%;
+  }
+  
+  
+
+}
