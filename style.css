@@ -538,6 +538,16 @@ color: hsl(12, 88%, 59%);
   .socials{
     width: 100%;
   }
+
+  footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .socials a {
+    margin-left: 10px;
+  }
   
   
 
