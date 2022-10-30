@@ -436,6 +436,13 @@ color: hsl(12, 88%, 59%);
   transition: all 700ms;
 }
 
+.hidden2 {
+  opacity: 0;
+  filter: blur(2px);
+  transform: translateY(-5%);
+  transition: all 700ms;
+}
+
 .show {
   opacity: 1;
   filter: blur(0);
