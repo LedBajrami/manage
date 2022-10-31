@@ -42,7 +42,7 @@ function showSlides(n) {
 
 
 
-
+/*
 
 const modal = document.querySelector('.modal')
 const openModal = document.getElementById('open-modal')
@@ -56,7 +56,7 @@ closeModal.addEventListener('click', () => {
   modal.close()
 })
 
-
+*/
 
 
 
