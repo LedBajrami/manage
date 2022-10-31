@@ -33,7 +33,7 @@ body {
 
 
 
-/*------------LoginModal--------------*/
+/*------------LoginModal--------------
 
 .login-photo {
   display: block;
@@ -87,7 +87,7 @@ form button {
   filter: drop-shadow(1px 1px 6px hsl(12, 88%, 59%));
 }
 
-/*-----------------*/
+-----------------*/
 
 
 
